@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<link rel="icon" href="grave.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+/*body {
+    background:url('lightning.gif') 100% 100% fixed;
+    background-size:100%;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}*/
+.double-space {
+  line-height: 2;
+}
+</style>
+<audio controls autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="grave.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="Religion.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <img src="pray.png" style="width:100%">
+    <p>RELIGION</p>
+  </a>
+  <a href="Reactions.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <img src="cry.png" style="width:100%">
+    <p>REACTION</p>
+  </a>
+  <a href="Notes.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <img src="note.png" style="width:100%">
+    <p> Notes and End </p>
+  </a>
+  
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="Religion.html" class="w3-bar-item w3-button" style="width:25% !important">Religion</a>
+    <a href="Reactions.html" class="w3-bar-item w3-button" style="width:25% !important">Reaction</a>
+    <a href="Notes.html" class="w3-bar-item w3-button" style="width:25% !important">Notes and End</a>
+    
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Left</span> Behind in the Wake of Death</h1>
+    <p><i>Beloved</i> multigenre project</p>
+    <img src="grave.png" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Dear Reader</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="double-space"> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toni Morrison published <i>Beloved</i> in 1987, and told the story of former slaves shortly after the American Civil War. During this time of uncertainty and hardship for former slaves we see the past experiences and lasting troubles that came from a history of slavery.</p>
+<p class="double-space">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout the novel, Morrison shows us the views of not only one character but several, centered around Sethe a mother of four, her children, and lover Paul D. The story is centered around the results of a horrible incident many years prior to the books start, when Sethe killed her daughter, known only as Beloved, and how different characters process and react to this occurrence.</p>
+<p class="double-space">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Death often acts as a pivotal moment in a person’s life or in a novel - be it a loved one or a foe who dies. As House, M.D. stated “Almost dying changes nothing. Dying changes everything.” Here I explore how exactly people are affected by a death - how they change because of it, and how different cultures treat one’s passing differently.</p>
+<p class="double-space">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At some point or another, everybody experiences death, whether it be their own, a family member, a friend, or even a victim. I hope that this project will help accept what has happened and push people to accept the change in their lives. Things shouldn’t go back to normal, because dying changes everything.
+</p>
+<p class="double-space">
+  Condolences,</br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Praveen Balaji
+          </p>
+
+    </p>
+    
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Music Score (p.s. keep volume low, refresh page)</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-full">
+        <img src= "score.png" style="width:100%">
+
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
+

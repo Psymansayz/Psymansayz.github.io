@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<link rel="icon" href="religions.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+  background-image: url("religions.jpg");
+  width: 100vw;
+  height: 100vh; 
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.bar .button {
+  overflow: auto;
+    padding: 2px;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<audio controls autoplay loop>
+  <source src="holy.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="Homepage.html" class="w3-bar-item w3-button w3-wide"> <img src="grave.png" alt ="HOME" height="30" width="40"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Factoids</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Religions</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Factoids</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Religions</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-black" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small"><mark>Religion and Death</mark></span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
+  </div> 
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">FACTOIDS</h3>
+  <p class="w3-center w3-large">Death and Religion</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <p class="w3-large">Breakdown</p>
+      <img src="barchart.png" height="200" width="280">
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Lifespan</p>
+      <p>World wide average life expectancy is 71.5 years, 68 years and 4 months for males and 72 years and 8 months for females. </br>(Y'all get 4 1/3 more years, tsk.)</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="atheist.jpg" height="80" width="80">
+      <p class="w3-large">Athiest</p>
+      <p>Only 16% of the world identifies as non-religious, that means around 84% follow at least one organized religion.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="after.jpg" height="80" width="80">
+      <p class="w3-large">Afterlife</p>
+      <p>More than 55.4% of the world believes in some kind of an afterlife based on their religious identity.</p>
+    </div>
+  </div>
+</div>
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Religion Geographically</h3>
+  <p class="w3-center w3-large">Click to view</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="Chrpop.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Christian Geography">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="Jewpop.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jewish Geography">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="Muspop.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Muslim Geography">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="Athpop.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Non-religious Geography">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="Hinpop.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hindu Geography">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="Budpop.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Budist Geography">
+    </div>
+  </div>
+</div>
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Beliefs by religion</h3>
+  <p class="w3-center w3-large">Click for detail</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="Chrlogo.png" style="width:100%" onclick="onClick2(this)" class="w3-hover-opacity" alt="Christianity (Catholocism)
+    </br>Catholic belief in regards to post death is essentially broken into three realms: heaven, hell, and purgatory. After the body dies, the soul is judged the righteous and free of sin go to heaven, but those with unrepented grievous sins go to hell. Those with less-serious sin may be put in purgatory, to be cleansed before entering heaven. Contrary to popular belief, hell is not necessarily eternal torture, but rather a self exclusion from God.
+</br>Catholic tradition supports a mourning period for those left in the wake of death. For spouses, and those very close this period is suggested to last up to a year and a day. The mourning should progressively lessen in extent, and is often defined by colors worn. At its peak, this generally means all black and progressively transfering to lighter colors towards the end of the mourning period. 
+<br>The Vatican proclaimed that  burial of deceased bodies should be the norm, but cremation is not opposed to the religion.
+">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="Muslogo.png" style="width:100%" onclick="onClick2(this)" class="w3-hover-opacity" alt="Islam
+    </br> Islam follows a similar system of afterlife with a belief in heaven, Jannah, and Hell, Jahannam. The key difference here is that both are operated on a tiered system based on the level of faith of the person in question. The greater one’s faith and duration of practice the more comfortable their accommodations will be in the afterlife. Islamic hell is also described as torturous as opposed to the more tame Catholic definition.
+</br> Islamic tradition also supports a mourning period following the death of a loved one. Friends and family typically mourn together the loss of a loved one for three days. During this time the responsibilities for the immediate family are kept to a minimum. While attire is not specified, conservative clothing with dark colors is often worn.
+</br> Burial is practiced in Islamic tradition, cremation is seen as impure.
+">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="Conlogo.png" style="width:100%" onclick="onClick2(this)" class="w3-hover-opacity" alt="Confucianism
+    </br>Although Confucians do not typically hold beliefs about the individual salvation or damnation of persons beyond this life, ancestor worship is an important part of Confucian faith and practice
+</br>The mourning of a loved one usually involves elaborate rituals, which vary according to region and sect. The intensity of the mourning is thought to reflect the quality of relationship one had with the deceased. From the time of Confucius until the 20th century, a three-year mourning period was often prescribed,
+</br> Burial is typically practiced. The process is very elaborate, with family members performing many steps prior to the body being buried, similar to the Shinto practices.
+">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="Bahlogo.png" style="width:100%" onclick="onClick2(this)" class="w3-hover-opacity" alt="Baha'i
+    </br> The teachings of the Bahá'í Faith state that the nature of the afterlife is beyond the understanding of those living. It is also affirmed that souls will progress until they are in the presence of god, and that they will retain individuality in the afterlife.
+</br> 
+</br> Burial is traditional in Baha’i faith, cremation is not permitted. In addition, it is recommended that bodies be buried no further than 1 hour’s travel away from the location of death. Furthermore, a ring with the inscription “I came forth from God, and return unto Him, detached from all save Him, holding fast to His Name, the Merciful, the Compassionate” should be worn. Embalming should be avoided if possible.
+">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="Hinlogo.png" style="width:100%" onclick="onClick2(this)" class="w3-hover-opacity" alt="Hinduism
+    </br> I find that hindu beliefs on this matter are best expressed through verse. In general, a similar rebirth system to buddhism is followed, but based on the system of dharma and karma.</br>
+</br>The soul is neither born, nor does it ever die; nor having once existed, does it ever cease to be. The soul is without birth, eternal, immortal, and ageless. It is not destroyed when the body is destroyed.
+</br>As a person sheds worn-out garments and wears new ones, likewise, at the time of death, the soul casts off its worn-out body and enters a new one.
+</br>Weapons cannot shred the soul, nor can fire burn it. Water cannot wet it, nor can the wind dry it.
+</br>The soul is unbreakable and incombustible; it can neither be dampened nor dried. It is everlasting, in all places, unalterable, immutable, and primordial.
+</br>The soul is spoken of as invisible, inconceivable, and unchangeable. Knowing this, you should not grieve for the body.
+</br> ~Bhagavad gita, chapter 2 verses 20-25
+</br>
+</br> Cremation is traditional for bodies. The ashes are then spread in places of importance to the deceased, or at holy sites.
+">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="Shilogo.png" style="width:100%" onclick="onClick2(this)" class="w3-hover-opacity" alt="Shintoism
+    </br> The Shinto belief system generally believed that the dead go to a place similar to Hades, an underworld by the name of Yomi. Although this is the case, some stories tell tales of reincarnation from Yomi, and other show death as a step to attaining divinity (should one be worthy).
+</br> Mourners wear solid black in a day of mourning called Kichu-fuda and a Shinto priest will perform various rituals. This is the same day as the funeral. Mourning periods may extend past this, but the belief system only officially mentions one day.
+</br> Post death practices in Shintoism are extremely complicated, with at least twenty steps or ceremonies performed at shrines and in homes. Dead bodies are seen as impure, and as such are cremated, similar to buddhist tradition. Some of these ashes are taken home, others are left at shrines.
+">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="Budlogo.png" style="width:100%" onclick="onClick2(this)" class="w3-hover-opacity" alt="Budhism 
+    </br> Buddhists believe in a reincarnation cycle. This cycle is determined through karma, and those with better karma may be reborn in a higher form or realm (up to human or heavenly realms), and those with worse karma as lower forms (animals, ghost, hellish realms, etc). They also maintain that the deceased have an opportunity to ascend and leave the cycle of reincarnation, although there are many reasons they may choose not to take it.
+</br> Many Buddhist traditions include a ninety day mourning period for the bereaved families. This period is often filled with various rituals or ceremonies, including prayers and chants, performed in one’s home periodically to keep it pure even when death reigns over the area. 
+<br>The deceased may be cremated or buried, although cremation is traditional. The process is said to be extremely spiritual.
+">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+ <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-black">Music Score </br>Latin:
+"Dei, quod reliuum est, nolite metuere, et ossa tua liberabit, expectans"
+</br>
+English:
+"You, who awaits God, do not fear, what is left , and he will give you strength"﻿</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-full">
+        <img src= "holyscore.png" style="width:100%">
+
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+function onClick2(element) {
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
